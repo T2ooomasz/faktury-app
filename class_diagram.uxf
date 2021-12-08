@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>180</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>tp.maven.faktury::Faktura
+--
+-klientId: int
+-fakturaId: int
+-informacje: Informacje
+-sprzedawca: Sprzedawca
+-nabywca: Nabywca
+-rzeczy: Rzeczy
+-statusy: Statusy
+--
++Faktura(): ctor
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>10</y>
+      <w>200</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>tp.maven.faktury::Informacje
+--
+-dokument: TypDokumentu
+-numer: String
+-jezyk: Typjezyka
+-miejsceWystawienia: String
+-dataWystawienia: Data
+-dataSprzedazy: Data
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>410</x>
+      <y>10</y>
+      <w>190</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>tp.maven.faktury::Nabywca
+--
+-nazwa: String
+-NIP: int[]
+-ulica: String
+-miasto: String
+-kod: int
+-podpis: Podpis
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>210</y>
+      <w>210</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>tp.maven.faktury::Sprzedawca
+--
+-nazwa: String
+-NIP: long
+-ulica: String
+-miasto: String
+-kod: int
+-podpis: Podpis
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>210</y>
+      <w>290</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>tp.maven.faktury::Data
+--
+-dzien: int
+-miesiac: int
+-rok: int
+--
++Data(int dzien1, int miesiac1, int rok1): ctor
++getData(): Data
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>530</x>
+      <y>210</y>
+      <w>170</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>tp.maven.faktury::Podpis
+--
+-name: String
+-kod: int
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>380</y>
+      <w>210</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>tp.maven.faktury::FakturyMain
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>230</x>
+      <y>380</y>
+      <w>180</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;interface&gt;&gt;
+tp.maven.faktury::Podmiot
+--
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>380</y>
+      <w>180</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>tp.maven.faktury::Rzeczy
+--
+--
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

@@ -1,20 +1,19 @@
-/**
- * 
- */
 package tp.maven.faktury;
 
 /**
- * @author tkazulak
+ * This is Application.
+ *
+ * @author Tomasz Kazulak.
  *
  */
 public class FakturyMain {
 
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+  /**
+  * This is main method of application.
+  */
+  public static void main(String[] args) {
+    // TODO Auto-generated method stub
 
-	}
+  }
 
 }
