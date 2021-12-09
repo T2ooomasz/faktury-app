@@ -1,9 +1,11 @@
 package tp.maven.faktury;
 
 /**
- * @author tkazulak
+ * Interface to podmioty: Sprzedawca and Nabywca.
+ *
+ * @author Tomasz Kazulak
  *
  */
 public interface Podmiot {
-  // HERE GO DEFINITION OF METHODS FOR Sprzedawca AND Nabywca
+  public void printPodmiot();
 }

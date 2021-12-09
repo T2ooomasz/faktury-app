@@ -27,29 +27,30 @@ public class Rzecz {
    * It allows the administrator to fill all fields.
    */
   public Rzecz() {
-    System.out.println();
     @SuppressWarnings("resource")
     Scanner in = new Scanner(System.in);
-    System.out.println();
+    System.out.println("Nazwa: ");
     nazwa = in.nextLine();
-    System.out.println();
+    System.out.println("GTU: ");
     gtu = in.nextLine();
     EnumSet.allOf(TypJednostkiMiary.class)
         .forEach(miara -> System.out.print(miara + ", "));
-    System.out.println();
+    System.out.println("Jednostka miary: ");
     jednostkaMiary = TypJednostkiMiary.valueOf(in.nextLine().toUpperCase());
-    System.out.println();
+    System.out.println("Ilosc: ");
     ilosc = in.nextDouble();
-    System.out.println();
+    System.out.println("Cena netto: ");
     cenaNetto = in.nextDouble();
     wartoscNetto = calculateWartoscNetto();
-    System.out.println();
+    System.out.println("Stawka VAT: ");
     stawkaVat = in.nextDouble();
     kwotaVat = calculateKwotaVat();
     wartoscBrutto = calculateWartoscBrutto();
     EnumSet.allOf(TypWaluty.class)
         .forEach(wal -> System.out.print(wal + ", "));
-    System.out.println();
+    System.out.println("Waluta: ");
+    @SuppressWarnings("unused")
+    String bufor = in.nextLine();
     waluta = TypWaluty.valueOf(in.nextLine().toUpperCase());
   }
   

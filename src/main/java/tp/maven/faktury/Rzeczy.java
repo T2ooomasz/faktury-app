@@ -52,13 +52,6 @@ public class Rzeczy {
     return lista;
   }
   
-  /*
-  private Rzecz newRzecz() {
-    Rzecz newrzecz = new Rzecz();
-    return newrzecz;
-  }
-  */
-  
   /** To get a private field of sum Netto value. */
   public double getRazemNetto() {
     return razemNetto;
@@ -76,11 +69,13 @@ public class Rzeczy {
   
   /** Print all items in invoice (faktura). */
   public void printRzeczy() {
+    System.out.println("TOWARY LUB USLUGI");
     int iterator = 1;
     for (Rzecz rzecz : lista) {
-      System.out.print("Towar lub usluga nr. " + iterator);
+      System.out.print(iterator + "\t");
       rzecz.printRzecz();
       iterator++;
     }
+    System.out.println("Razem Netto: " + razemNetto + "\tDo zaplaty (brutto): " + razemBrutto);
   }
 }
