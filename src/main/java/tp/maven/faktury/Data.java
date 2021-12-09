@@ -1,7 +1,9 @@
 package tp.maven.faktury;
 
 /**
- * @author tkazulak
+ * This is class contain a Date format.
+ *
+ * @author tkazulak.
  *
  */
 public class Data {
@@ -9,6 +11,9 @@ public class Data {
   private int miesiac;
   private int rok;
 
+  /**
+   * This is constructor.
+   */
   public Data(int dzien1, int miesiac1, int rok1) {
     dzien = dzien1;
     miesiac = miesiac1;

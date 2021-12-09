@@ -6,7 +6,7 @@ package tp.maven.faktury;
  */
 public class Sprzedawca implements Podmiot {
   private String nazwa;
-  private long NIP;
+  private long nip;
   private String ulica;
   private String miasto;
   private int kod;
